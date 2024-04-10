@@ -1,0 +1,25 @@
+#search-container{
+    display: flex;
+    height: 200px;
+    background-color: rgb(133, 197, 108);
+    margin-top:20px;
+    padding-top:20px;
+    justify-content: center;
+}
+
+#parent-container-0{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    min-height: 800px;
+    background-color: rgb(255, 151, 77);
+}
+
+.child-container{
+    margin:10px;
+    padding:20px;
+    height: 300px;
+    width:300px;
+    background-color: rgb(108, 108, 197);
+
+}

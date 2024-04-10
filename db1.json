@@ -1,0 +1,34 @@
+{
+    "blocks": [
+      {
+        "id": 1,
+        "name": "block1_churchOfLight",
+        "cover_img": "./src/asset/1_churchOfLight/1"
+     },
+      {
+        "id": 2,
+        "name": "block2",
+        "cover_img": "./src/asset/2"
+      },
+      {
+        "id": 3,
+        "name": "block3",
+        "cover_img": "./src/asset/3"
+      },
+      {
+        "id": 4,
+        "name": "block4",
+        "cover_img": "./src/asset/4"
+      },
+      {
+        "id": 5,
+        "name": "5",
+        "cover_img": "./src/asset/5"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      },
+    ]
+  }
