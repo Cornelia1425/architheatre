@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import Home from './components/Home'
 import App from './components/App'
 import Contact from './components/Contact'
-import Bio from './components/Bio'
 import About from './components/About'
-import Portfolio from './components/Portfolio'
+//import Portfolio from './components/Portfolio'
+//import Bio from './components/Bio'
 import Portfolioitem from './components/Portfolioitem'
 
-//import './index.css'
+import './styles.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const routes =[
@@ -55,6 +55,7 @@ const router = createBrowserRouter(routes) //if this called hamberger, router ={
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <p>Hello This is ArchiTheatre</p>
     <RouterProvider router={router} /> 
   </React.StrictMode>,
 )
