@@ -1,9 +1,52 @@
 {
-    "portfolio":[
-        {
-            "id":1,
-            "name": "project 1"
-        }
+    "blocks": [
+      {
+        "id": 1,
+        "name": "block1_churchOfLight",
+        "cover_img": "./src/assets/1.jpeg" 
+    
+     },
+      {
+        "id": 2,
+        "name": "block2_rawhouse",
+        "cover_img": "src/assets/2.png"
+      },
+      {
+        "id": 3,
+        "name": "block3_noguchi museum",
+        "cover_img": "src/assets/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "block4",
+        "cover_img": "./src/assets/1.jpeg" 
+    
+      },
+      {
+        "id": 5,
+        "name": "block5",
+        "cover_img": "src/assets/2.png"
+      },
+      {
+        "id": 6,
+        "name": "block6",
+        "cover_img":"src/assets/3.jpg"
+      },
+      {
+        "id": 7,
+        "name": "block7",
+        "cover_img": "./src/assets/1.jpeg" 
+    
+      },
+      {
+        "id": 8,
+        "name": "block8",
+        "cover_img": "src/assets/2.png"
+      },
+      {
+        "id": 9,
+        "name": "block9",
+        "cover_img":"src/assets/3.jpg"
+      }
     ]
-
-}
+  }

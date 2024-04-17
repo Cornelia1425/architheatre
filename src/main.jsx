@@ -1,15 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './components/Home'
-import App from './components/App'
-import Contact from './components/Contact'
-import Bio from './components/Bio'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Portfolioitem from './components/Portfolioitem'
-
-//import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
+
+import Home from './components/Home.jsx'
+
+import Showall from './components/Showall.jsx'
+
+import BlockForm from './components/BlockForm.jsx'
+import App from './components/App.jsx'
+import Contact from './components/Contact.jsx'
+import Bio from './components/Bio.jsx'
+import About from './components/About.jsx'
+import Portfolio from './components/Portfolio.jsx'
+import Portfolioitem from './components/Portfolioitem.jsx'
+
+
+import './styles.css'
+
 
 const routes =[
   {
@@ -41,8 +49,16 @@ const routes =[
         ]  
       },
       {
+        path:"add",
+        element:<BlockForm />    
+      },
+      {
         path:"contact",
         element:<Contact />    
+      },
+      {
+        path:"showall",
+        element:<Showall />    
       }
 
     ]  

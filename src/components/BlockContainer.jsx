@@ -1,10 +1,17 @@
 import Block from './Block'
 
-function BlockContainer(){
+export default function BlockContainer({blocks}){
+
+    const blockCovers = blocks.map( block =>{
+        return <Block key={block.id} block={block}/>
+    }
+
+    )
     return(
         <>
-            <Block />
-        
+        <div className="covers_container">
+           {blockCovers}
+        </div>
         </>    
     )
     
