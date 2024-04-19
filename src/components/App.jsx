@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import React, {useState, useEffect} from 'react'
 // import ReactDOM from 'react-dom/client'
 import Block from './Block'
+import BlockForm from './BlockForm'
 import BlockContainer from './BlockContainer'
 
 
@@ -19,7 +20,20 @@ export default function App(){
     },[])
     console.log("blocks: ",blocks)
 
-
+    //this is for BlockForm
+    function createBlock(name, cover_img, words){
+    fetch('http://localhost:3001/blocks',{
+        method:'POST',
+        headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body:JSON.stringify({name, cover_img, words})
+    })
+    .then(res=>res.json())
+    .then(newBlock=>
+        setBlocks([...blocks,newBlock])
+    )}
 
     return (
         <div>
@@ -32,6 +46,10 @@ export default function App(){
             
             </Navbar>
             <BlockContainer blocks={blocks}/>
+
+            <div className="form">
+                <BlockForm createBlock={createBlock}/>
+            </div>
 
            
          {/*    <Outlet />  */}
