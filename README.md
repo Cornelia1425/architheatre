@@ -8,7 +8,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+https://www.architheatre.org/
+
 challenges
-1. present all blogs with cover image, will deal with all images later. this will be in show all page
-2. have home, about, input, and showall, route, 4 in total
-3. 
+1. present all blogs with cover image, this will be in show all page
+2. have home, about, input/add, and showall, route, 
+3. have portfolio, contact, instagram, and shop external links in footer section
+4. css
