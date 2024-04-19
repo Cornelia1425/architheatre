@@ -34,9 +34,9 @@ export default function App(){
             <BlockContainer blocks={blocks}/>
 
            
-            <Outlet />
-            <h1>ARCHITHEATRE</h1>
-           <h2>Grid Layout</h2>
+         {/*    <Outlet />  */}
+          {/*   <h1>ARCHITHEATRE</h1>
+            <h2>Grid Layout</h2> */}
 
          {/*    <div className="grid-layout styled-container" >
 

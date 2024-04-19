@@ -57,8 +57,8 @@ a:hover{
     "sidebar main main main main main main"
     "sidebar main main main main main main"
     "sidebar main main main main main main"
-    "sidebar main main main main main main"
-    "sidebar footer footer footer footer footer footer";
+    "add main main main main main main"
+    "add footer footer footer footer footer footer";
     min-height:100vh
 }
 
@@ -82,8 +82,7 @@ a:hover{
 }
 
 .showall {
-  
-    background-color: rgb(235, 242, 128);
+    background-color: rgb(212, 255, 248);
     grid-area:showall;
     right:0;
     border-bottom: 2px solid black;
@@ -91,56 +90,66 @@ a:hover{
     display:flex;
     /* align-items: center; */
     justify-content: flex-end;
+    padding: 10px
 }
+
 .header {
-    background-color: lightgreen;
+    background-color: rgb(201, 249, 221);
     grid-area:header;
     border-bottom: 2px solid black;
     font-size:20px; 
-  
+    padding: 10px
 }
 
 .main {
-    background-color: lightblue;
+    background-color: rgb(182, 227, 242);
     grid-area:main;
     display:flex;
     flex-wrap: wrap;
     min-width: 800px; 
     border-bottom: 2px solid black;
     border-left: 2px solid black;
-
-    
+    padding: 10px
 }
 
 .footer {
     display:grid;
-    background-color: orange;
+    background-color: rgb(176, 231, 191);
     grid-area:footer;
     border-left: 2px solid black;
     grid-template-columns: auto repeat(4, 1fr) ;
     grid-template:
-    "footer_inner footer_inner footer_inner footer_inner"
+    "footer_inner footer_inner footer_inner footer_inner";
+    padding: 10px
 }
 
 .footer_inner{
-    color:bisque;
-    background-color: rgba(146, 164, 254, 0.5);
-  
+    color:rgb(44, 44, 44);
+    background-color: rgba(146, 164, 254, 0);
     display:flex;
-    align-items: center;
+    align-items: end;
     justify-content: flex-end;
-
-   
-
 } 
 
-
-
 .sidebar {
-    background-color: pink;
+    background-color: rgb(228, 246, 209);
     grid-area:sidebar;
-    width:150px
+    padding: 10px
 }
+
+.add {
+    background-color: rgb(204, 232, 253);
+    grid-area:add;
+    left:0;
+    bottom:0;
+    border-top: 2px solid black;
+    display:flex;
+    /* align-items: center; */
+    justify-content:start;
+    align-items:end;
+    padding: 10px
+}
+
 
 img.cover_img{
     
