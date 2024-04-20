@@ -3,7 +3,7 @@ import {Outlet} from  'react-router-dom'
 export default function About(){
 
     return (
-        <div  className="main">
+        <div  >
             <div className="main_inner" >
                 <h4><br/><br/>Welcome to ARCHITHEATRE, your window into the world of architecture through the eyes of an artist. Founded by Yiran, an avid traveler with a passion for creativity, ARCHITHEATRE invites you on a journey to explore the stories embedded within the built environment.<br/><br/>
 

@@ -14,20 +14,24 @@ export default function BlockForm({createBlock}){
     return (
 
         <>
-            <form onSubmit={handleSubmit}>
+            <div  >
+                <div className="main_inner" >
+                    <form onSubmit={handleSubmit}>
 
-            <label htmlFor="name">Name: </label>
-                <input name="name"  onChange={e=>setName(e.target.value)} placeholder="name" value={name}/>
+                    <label htmlFor="name">Name: </label>
+                        <input name="name"  onChange={e=>setName(e.target.value)} placeholder="name" value={name}/>
 
-            <label htmlFor="cover_img">Cover_img: </label>
-                <input name="cover_img" onChange={e=>setCover_img(e.target.value)} placeholder="image" />
+                    <label htmlFor="cover_img">Cover_img: </label>
+                        <input name="cover_img" onChange={e=>setCover_img(e.target.value)} placeholder="image" />
 
-            <label htmlFor="words">Words: </label>
-                <input name="words"  onChange={e=>setWords(e.target.value)} placeholder="write here"/>
+                    <label htmlFor="words">Words: </label>
+                        <input name="words"  onChange={e=>setWords(e.target.value)} placeholder="write here"/>
 
-            <input type="submit" value="Add Block" />
+                    <input type="submit" value="Add Block" />
 
-            </form>
+                    </form>
+                </div>
+            </div>
         </>
     )
 }
