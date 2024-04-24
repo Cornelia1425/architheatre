@@ -8,6 +8,7 @@ import Home from './components/Home.jsx'
 import Showall from './components/Showall.jsx'
 
 import BlockForm from './components/BlockForm.jsx'
+import BlockContainer from './components/BlockContainer.jsx'
 import App from './components/App.jsx'
 import Contact from './components/Contact.jsx'
 import Bio from './components/Bio.jsx'
@@ -33,7 +34,7 @@ const routes =[
       {
         path:"about",
         element:<About />,
-        children:[
+   /*      children:[
           {
             path:"portfolio",
             element:<Portfolio />
@@ -46,7 +47,7 @@ const routes =[
             path:"bio",
             element:<Bio />
           }
-        ]  
+        ] */  
       },
       {
         path:"add",
@@ -58,7 +59,7 @@ const routes =[
       },
       {
         path:"showall",
-        element:<Showall />    
+        element:<BlockContainer />    
       }
 
     ]  

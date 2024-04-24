@@ -2,7 +2,10 @@ import {Link} from 'react-router-dom'
 import '../styles.css'
 import {useState} from 'react'
 import About from './About'
+
 import BlockForm from './BlockForm'
+import Showall from './Showall'
+import BlockContainer from './BlockContainer'
 import {Outlet} from  'react-router-dom'
 
 
@@ -29,6 +32,7 @@ export default function Navbar(){
         } */
 
 
+
     return (
         <div className="grid-layout styled-container">
 
@@ -41,6 +45,10 @@ export default function Navbar(){
             </div>
           
        
+            <div className="showall">
+            <Link className="showall_inner" to="/showall" onClick ={()=>setContent("SHOW ALL")} >SHOW ALL</Link> 
+            </ div> 
+
 
             <div className="add">
                 <Link className="add_inner"  to="/add" onClick ={()=>setContent("ADD")}>ADD</Link> 
@@ -52,14 +60,22 @@ export default function Navbar(){
             <div className="main">
                 <Link to="/about"><About />  </Link>
             </div>
-            //<About />   
+   
             : 
             content === "ADD"? 
             <div className="main">
                 <Link to="/add"><BlockForm />  </Link>
             </div>
-                //<BlockForm />   
+           
             : 
+            content == "SHOW ALL"? 
+            <div className="main">
+                <Link to="/showall"><Showall />  </Link>
+            </div>
+           
+            : 
+          
+            
             (<div className="main">
                 <div className="main_inner"  >CONTENT</div>
             </div>) }
@@ -75,9 +91,7 @@ export default function Navbar(){
                 <a className="footer_inner" href="https://www.instagram.com/yiranshu/">INSTAGRAM  </a> 
             </ div> 
 
-            <div className="showall">
-            <Link className="showall_inner" to="/showall">SHOW ALL</Link> {/* show-link */}
-            </ div> 
+      
 
         </div>
     )

@@ -77,6 +77,18 @@
       "cover_img": "src/assets/9.jpg",
       "words": "",
       "id": 13
+    },
+    {
+      "name": "test",
+      "cover_img": "src/assets/9.jpg",
+      "words": "f",
+      "id": 14
+    },
+    {
+      "name": "Yiran Shu",
+      "cover_img": "src/assets/9.jpg",
+      "words": "",
+      "id": 15
     }
   ]
 }
