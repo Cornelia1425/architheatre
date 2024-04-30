@@ -1,4 +1,22 @@
+//challenges
+/* 
+challenge 1
+in js, instead of adding video link, change to add an image
 
+challenge 2
+create another input box, instead of adding video link, input text
+
+challenge 3
+the inputted image and text should display on the screen
+
+
+challenge 4
+fetch the existing data from db.json, 
+
+challenge 5 
+create data base db.json
+
+*/
 
 //submit 
 let form = document.querySelector('form')
