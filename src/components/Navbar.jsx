@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import '../styles.css'
 import {useState} from 'react'
 import About from './About'
@@ -53,6 +53,8 @@ export default function Navbar(){
             <div className="add">
                 <Link className="add_inner"  to="/add" onClick ={()=>setContent("ADD")}>ADD</Link> 
             </ div > 
+
+          
 
           
         

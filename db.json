@@ -3,90 +3,90 @@
     {
       "id": 1,
       "name": "block1_churchOfLight",
-      "cover_img": "./src/assets/1.jpeg",
+      "cover_img": "1.jpeg",
       "words": "this is the article of church of light"
     },
     {
       "id": 2,
       "name": "block2_rawhouse",
-      "cover_img": "src/assets/2.png",
+      "cover_img": "2.png",
       "words": "this is the article of raw house"
     },
     {
       "id": 3,
       "name": "block3_noguchi museum",
-      "cover_img": "src/assets/3.jpg",
+      "cover_img": "3.jpg",
       "words": "this is the article of noguchi museum"
     },
     {
       "id": 4,
       "name": "block4",
-      "cover_img": "./src/assets/1.jpeg",
+      "cover_img": "1.jpeg",
       "words": "this is the article of block4"
     },
     {
       "id": 5,
       "name": "block5",
-      "cover_img": "src/assets/2.png",
+      "cover_img": "2.png",
       "words": "this is the article of block5"
     },
     {
       "id": 6,
       "name": "block6",
-      "cover_img": "src/assets/3.jpg",
+      "cover_img": "3.jpg",
       "words": "this is the article of block6"
     },
     {
       "id": 7,
       "name": "block7",
-      "cover_img": "./src/assets/1.jpeg",
+      "cover_img": "1.jpeg",
       "words": "this is the article of block7"
     },
     {
       "id": 8,
       "name": "block8",
-      "cover_img": "src/assets/2.png",
+      "cover_img": "2.png",
       "words": "this is the article of block8"
     },
     {
       "id": 9,
       "name": "block9",
-      "cover_img": "src/assets/3.jpg",
+      "cover_img": "3.jpg",
       "words": "this is the article of block9"
     },
     {
       "name": "block10",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "blck 10",
       "id": 10
     },
     {
       "name": "dsa",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "fdas",
       "id": 11
     },
     {
       "name": "fdsafdsa",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "3",
       "id": 12
     },
     {
       "name": "5",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "",
       "id": 13
     },
     {
       "name": "test",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "f",
       "id": 14
     },
     {
       "name": "Yiran Shu",
-      "cover_img": "src/assets/9.jpg",
+      "cover_img": "9.jpg",
       "words": "",
       "id": 15
     }
