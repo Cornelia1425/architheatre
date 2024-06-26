@@ -18,6 +18,8 @@ export default function BlockById(){
         <div>
 
             <img className = "cover_img" src={`/assets/${block.cover_img}`} alt={block.name}/>
+            <br/>
+            <span className = "words"/>{block.words}<span/>
      
     
         </div>
