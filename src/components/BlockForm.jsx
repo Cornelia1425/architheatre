@@ -15,7 +15,7 @@ export default function BlockForm({createBlock}){
     return (
 
         <>
-            <div  >
+            <div  className="block-form">
                 <div className="main_inner" >
                     <form onSubmit={handleSubmit}>
 
