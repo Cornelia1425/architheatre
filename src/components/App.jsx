@@ -1,7 +1,7 @@
 import {Outlet} from 'react-router-dom'
 import Navbar from './Navbar'
 import React, {useState, useEffect} from 'react'
-// import ReactDOM from 'react-dom/client'
+
 
 import BlockForm from './BlockForm'
 
@@ -28,17 +28,7 @@ export default function App(){
 
     return (
         <div>
-
-
-
             <Navbar/>
-            <Outlet />
-
-            <div className="form">
-                <BlockForm createBlock={createBlock}/>
-            </div>
-
-
         </div>
 
     )

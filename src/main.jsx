@@ -30,29 +30,13 @@ const routes =[
     path:"/",
     element:<App />,
     children:[
-
       {
         index:true,
         element:<Home />
       },
-
       {
         path:"about",
         element:<About />,
-   /*      children:[
-          {
-            path:"portfolio",
-            element:<Portfolio />
-          },
-          {
-            path:"portfolio/:id", //portfolio/:hambergur/:pizz/:..
-            element:<Portfolioitem />
-          },
-          {
-            path:"bio",
-            element:<Bio />
-          }
-        ] */  
       },
       {
         path:"add",
