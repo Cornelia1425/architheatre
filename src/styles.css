@@ -1,8 +1,21 @@
 @import url(‘https://fonts.google.com/share?selection.family=Jersey+10+Charted|Space+Grotesk:wght@300..700’);
 
+html, body {
+    overflow: hidden;
+    /* flex:1; */
+    height: 100%;
+    margin:0;
+}
+
 .header_inner{
     font-family: 'Space Grotesk';
     font-size:100px;
+}
+
+.home, .block-form {
+    margin: 0;
+    padding: 0;
+    /* Add any other required styles */
 }
 
 #search-container{
@@ -19,7 +32,8 @@
     flex-flow:row wrap;
     justify-content: center;
     min-height: 800px;
-    background-color: rgb(255, 151, 77);
+    /* background-color: rgb(255, 151, 77); */
+
 }
 
 .child-container{
@@ -59,7 +73,9 @@ a:hover{
     "sidebar main main main main main main"
     "add main main main main main main"
     "add footer footer footer footer footer footer";
-    min-height:100vh
+    height:100vh;
+    overflow:hidden;
+    gap:0;
 }
 
 @media only screen and (max-width:600px){
@@ -68,7 +84,8 @@ a:hover{
         grid-template:
         "header"
         "main"
-        "footer"
+        "footer";
+        height:auto;
     }
     .sidebar{
         display:none
@@ -78,7 +95,9 @@ a:hover{
 .showall_inner{
     font-family: 'Space Grotesk';
 /*     font-family: 'Jeysey 10 Charted'; */
-    text-decoration: underline;
+    text-decoration:underline;
+    margin: 30px 30px auto auto;
+    
 }
 
 .showall {
@@ -90,7 +109,11 @@ a:hover{
     display:flex;
     /* align-items: center; */
     justify-content: flex-end;
-    padding: 10px
+    padding: 10px;
+    min-height: 150px;
+    max-height: 160px;
+    min-width: 140px;
+  
 }
 
 .header {
@@ -98,7 +121,9 @@ a:hover{
     grid-area:header;
     border-bottom: 2px solid black;
     font-size:20px; 
-    padding: 10px
+    padding: 10px;
+    min-height: 150px;
+    max-height: 160px;
 }
 
 .main {
@@ -109,7 +134,30 @@ a:hover{
     min-width: 800px; 
     border-bottom: 2px solid black;
     border-left: 2px solid black;
-    padding: 10px
+    padding: 20px;
+    min-height:63vh;
+    /* this ensures add doesn't affect main */
+    min-width: 87vw; 
+    overflow: auto;
+}
+
+.main_inner{
+    font-family:monospace;
+}
+
+.add {
+    background-color: rgb(204, 232, 253);
+    grid-area:add;
+    left:0;
+    bottom:0;
+    border-top: 2px solid black;
+    display:flex;
+    justify-content:start;
+    align-items:end;
+    padding: 10px 1px 30px 10px;
+     /* this ensures main doesnt affect add */
+    min-width:140px;
+    /* min-height: 80px; */
 }
 
 .footer {
@@ -120,54 +168,41 @@ a:hover{
     grid-template-columns: auto repeat(4, 1fr) ;
     grid-template:
     "footer_inner footer_inner footer_inner footer_inner";
-    padding: 10px
+    height: 70px;
+    padding-right: 40px;
+    
 }
+
 
 .footer_inner{
     color:rgb(44, 44, 44);
     background-color: rgba(146, 164, 254, 0);
     display:flex;
     align-items: end;
-    justify-content: flex-end;
+    justify-content: flex-end;   
+    padding-bottom: 20px;
+    
 } 
 
 .sidebar {
     background-color: rgb(228, 246, 209);
     grid-area:sidebar;
-    padding: 10px
+    padding: 20px 10px 10px 10px;
 }
-
-.add {
-    background-color: rgb(204, 232, 253);
-    grid-area:add;
-    left:0;
-    bottom:0;
-    border-top: 2px solid black;
-    display:flex;
-    /* align-items: center; */
-    justify-content:start;
-    align-items:end;
-    padding: 10px
-}
-
 
 img.cover_img{
-    
     width: 150px;
     height: 200px;
     object-fit: cover;
     object-position: 37% center  ;
     display:inline;
-
 }
 
 .covers_container{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color:blanchedalmond;
-    margin: 20px;
-    padding:  30px;
+    /* background-color:blanchedalmond;  */
 }
 
 .cover_single{

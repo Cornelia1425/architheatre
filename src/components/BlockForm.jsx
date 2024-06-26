@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {Link} from 'react-router-dom'
+
 
 export default function BlockForm({createBlock}){
     
@@ -15,7 +15,7 @@ export default function BlockForm({createBlock}){
     return (
 
         <>
-            <div  >
+            <div  className="block-form">
                 <div className="main_inner" >
                     <form onSubmit={handleSubmit}>
 
