@@ -5,6 +5,10 @@
     font-size:100px;
 }
 
+html {
+    /* overflow: hidden; */
+}
+
 #search-container{
     display: flex;
     height: 200px;

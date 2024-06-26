@@ -1,6 +1,8 @@
 function Home(){
     return (
-        <h1>welcome to architheatre</h1>
+        <div>
+        {/* <h1>this is home page</h1> */}
+        </div>
     )
 
 }

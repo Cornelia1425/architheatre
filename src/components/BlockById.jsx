@@ -17,7 +17,7 @@ export default function BlockById(){
     return (
         <div>
 
-            <img className = "cover_img" src={`./src/assets/${block.cover_img}`} alt={block.name}/>
+            <img className = "cover_img" src={`/assets/${block.cover_img}`} alt={block.name}/>
      
     
         </div>
