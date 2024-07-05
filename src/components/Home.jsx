@@ -1,7 +1,7 @@
 function Home(){
     return (
         <div className="home">
-        {/* <h1>this is home page</h1> */}
+        <h1 className="hometitle">建筑家剧场</h1>
         </div>
     )
 

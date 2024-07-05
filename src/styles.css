@@ -7,6 +7,13 @@ html, body {
     margin:0;
 }
 
+.hometitle{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    align-items: center;
+}
+
 .header_inner{
     font-family: 'Space Grotesk';
     font-size:100px;
