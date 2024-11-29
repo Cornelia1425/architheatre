@@ -20,7 +20,7 @@ export default function BlockById(){
     // };
 
 
-    // Function to convert newline characters to <br> tags and indent first line of each paragraph
+    // Function to convert newline characters to <br> tags and indent first line of each paragraph. NOW IT ONLY INDENT THE FIRST PARAGRAPH> WILL COME BACK TO THIS.
     const convertAndIndent = (text) => {
         if (!text) return '';
 

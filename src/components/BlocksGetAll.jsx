@@ -7,7 +7,7 @@ export default function BlocksGetAll(){
     const [blocks, setBlocks] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:3001/blocks')
+        fetch('http://localhost:3000/blocks')
         .then((res=>res.json()))
         .then(blockArray=>setBlocks(blockArray))
     },[])
