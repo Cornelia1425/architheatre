@@ -1,4 +1,6 @@
-@import url('https://fonts.google.com/share?selection.family=Jersey+10+Charted|Space+Grotesk:wght@300..700');
+/* @import url('https://fonts.google.com/share?selection.family=Jersey+10+Charted|Space+Grotesk:wght@300..700'); */
+@import url('https://fonts.googleapis.com/css?family=Space Grotesk');
+
 
 html, body {
     overflow: hidden;
