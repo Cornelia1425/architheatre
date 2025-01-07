@@ -13,7 +13,7 @@ export default function App(){
 
     //this is for BlockForm
     function createBlock(name, cover_img, words){
-    fetch('http://localhost:3001/blocks',{
+    fetch('http://localhost:3000/blocks',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json',

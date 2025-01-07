@@ -8,7 +8,7 @@ export default function Portfolioitem(){
     console.log (params)
 
     useEffect(()=>{
-        fetch(`http://localhost:3001/portfolio/${params.id}`)
+        fetch(`http://localhost:3000/portfolio/${params.id}`)
         .then(res=>res.json())
         .then(data=> setItem(data))
     }, [])
