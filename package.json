@@ -1,5 +1,6 @@
 {
   "name": "architheatre",
+  "homepage": "https://architheatre.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +16,9 @@
     "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react-swc": "^3.5.0",
