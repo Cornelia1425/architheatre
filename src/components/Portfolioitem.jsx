@@ -10,6 +10,7 @@ export default function Portfolioitem(){
     useEffect(()=>{
         // fetch(`http://localhost:3000/portfolio/${params.id}`)
         fetch(`https://Cornelia1425.github.io/architheatre/db.json/portfolio/${params.id}`)
+        fetch(`/db.json/portfolio/${params.id}`)
         .then(res=>res.json())
         .then(data=> setItem(data))
     }, [])

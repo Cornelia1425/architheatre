@@ -14,7 +14,8 @@ export default function App(){
     //this is for BlockForm
     function createBlock(name, cover_img, words){
     // fetch('http://localhost:3000/blocks',{
-    fetch('https://Cornelia1425.github.io/architheatre/db.json/blocks',{
+    // fetch('https://Cornelia1425.github.io/architheatre/db.json/blocks',{
+    fetch('/db.json/blocks',{
         method:'POST',
         headers:{
             'Content-Type': 'application/json',
