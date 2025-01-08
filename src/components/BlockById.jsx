@@ -8,7 +8,8 @@ export default function BlockById(){
 
     useEffect(()=>{
         console.log("fetching byId here ")
-        fetch(`http://localhost:3000/blocks/${blockId}`)
+        // fetch(`http://localhost:3000/blocks/${blockId}`)
+        fetch(`https://Cornelia1425.github.io/architheatre/db.json/blocks/${blockId}`)
         .then(res=>res.json())
         .then(block=>setBlock(block))
     },[])
