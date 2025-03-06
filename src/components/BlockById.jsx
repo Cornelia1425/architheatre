@@ -6,15 +6,35 @@ export default function BlockById(){
     const params = useParams()
     const blockId = params.id
 
-    useEffect(()=>{
-        console.log("fetching byId here ")
-        // fetch(`http://localhost:3000/blocks/${blockId}`)
-        // fetch(`https://Cornelia1425.github.io/architheatre/db.json/blocks/${blockId}`)
-        fetch(`/db.json/blocks/${blockId}`)
-        .then(res=>res.json())
-        .then(block=>setBlock(block))
-    },[])
-    console.log("blockbyid cover_img: ", block.cover_img)
+    // useEffect(()=>{
+    //     console.log("fetching byId here ")
+    //     // fetch(`http://localhost:3000/blocks/${blockId}`)
+    //     // fetch(`https://Cornelia1425.github.io/architheatre/db.json/blocks/${blockId}`)
+    //     fetch(`/db.json`)
+    //     .then(res=>res.json())
+    //     .then(block=>setBlock(block))
+    // },[])
+    // console.log("blockbyid cover_img: ", block.cover_img)
+
+    useEffect(() => {
+        console.log("fetching byId here");
+        fetch('/db.json')
+            .then((res) => res.json())
+            .then((data) => {
+            // Find the block by its ID
+            const foundBlock = data.blocks.find((b) => b.id == blockId);
+            if (foundBlock) {
+                setBlock(foundBlock);
+            } else {
+                console.log('Block not found');
+            }
+            })
+            .catch((err) => console.error('Error fetching block by ID:', err));
+        }, [blockId]); // The effect will re-run if blockId changes
+
+        if (!block) {
+        return <p>Loading...</p>;
+        }
 
     //  // Convert newline characters to <br> tags only, no indent
     // const convertNewlinesToBreaks = (text) => {
@@ -43,7 +63,8 @@ export default function BlockById(){
 
     return (
         <div>
-
+             <h1>{block.name}</h1>
+             {/* <img src={block.cover_img} alt={block.name} />  */}
            
             {/* {block.cover_img && (
                 <img className="cover_img" src={`/assets/${block.cover_img}`} alt={block.name} />
