@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './components/Home.jsx'
-import BlockForm from './components/BlockForm.jsx'
 import App from './components/App.jsx'
 import Contact from './components/Contact.jsx'
 import About from './components/About.jsx'
@@ -24,10 +23,10 @@ const routes =[
         path:"about",
         element:<About />,
       },
-      {
-        path:"add",
-        element:<BlockForm />    
-      },
+      // {
+      //   path:"add",
+      //   element:<BlockForm />    
+      // },
       {
         path:"contact",
         element:<Contact />    

@@ -1,7 +1,7 @@
 export default function Contact (){
     return (
         <>
-        <h2>contact page OK</h2>
+        <h2>yiranshu11@gmail.com</h2>
         </>
     )
 }

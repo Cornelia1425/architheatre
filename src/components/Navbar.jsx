@@ -25,7 +25,8 @@ export default function Navbar(){
             </ div> 
 
             <div className="add">
-                <Link className="add_inner"  to="/add" onClick ={()=>setContent("ADD")}>ADD</Link> 
+                {/* <Link className="add_inner"  to="/add" onClick ={()=>setContent("ADD")}>ADD</Link>  */}
+                <Link  to="/about" onClick ={()=>setContent("THIISISABOUT")}>LIST</Link> 
             </ div > 
 
           
@@ -36,7 +37,7 @@ export default function Navbar(){
             <div className="footer">
               
                     <a className="footer_inner"  href="https://www.yiranshu.com/">PORTFOLIO  </a> 
-                    <Link className="footer_inner"  to="/about/bio">SHOP  </Link> 
+                    <a className="footer_inner"  href="https://jujo.cargo.site/">SHOP  </a> 
                     <Link className="footer_inner"  to="/contact">CONTACT  </Link> 
                     <a className="footer_inner" href="https://www.instagram.com/yiranshu/">INSTAGRAM  </a> 
            
